@@ -17,4 +17,25 @@ def movezeros(arr):
         if arr[i] != 0:
             arr[i],arr[j] = arr[j],arr[i] #swapped
             j += 1
-    return arr                    # 
+    return arr      
+    
+    
+    
+    
+    
+    
+# Remove Duplicates Problem
+# input : nums = [0,1,0,3,7,5,7]
+def remove_duplicate(nums):
+    if not nums:
+        return 0
+    i = 0
+    for j in range(1,len(nums)):
+        if nums[j] != nums[i]:
+            i += 1
+            nums[i] = nums[j]
+    return i + 1            
+
+
+
+
