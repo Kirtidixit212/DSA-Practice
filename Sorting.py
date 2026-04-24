@@ -11,4 +11,16 @@ def bubbleSort(arr):
                 swapped = True
         if not swapped :
             break
-    return arr        
+    return arr   
+
+
+#SELECTION SORT
+def selectionSort(nums):
+    n = len(nums)
+    for i in range(n-1):
+        min = i
+        for j in range(i + 1,n):
+            if nums[j] < nums[min]:
+                min = j
+        nums[min],nums[i] = nums[i],nums[min]
+    return nums            
